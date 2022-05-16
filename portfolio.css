@@ -1,0 +1,518 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* $gradient: linear-gradient(to bottom,#D2BEEC,#FAFAFA); */
+html, body {
+  margin: 0;
+  padding: 25px;
+  background-image: url(./images/wp6100683.jpg);
+  background-position: center;
+}
+
+.container {
+  background-color: #D2BEEC;
+  background-image: url(./grain.png);
+  background-size: cover;
+  top: 0;
+  padding: 1em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  font-family: 'Seaside Resort NF', sans-serif;
+  -webkit-box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+}
+
+.container__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+.container__nav__item {
+  padding: 10px 10px;
+}
+
+.container__nav__item:hover {
+  background: #F587CC;
+  -webkit-transition-property: background;
+  transition-property: background;
+  font-size: 25px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Seaside Resort NF', sans-serif;
+  /* font-size: 50px; */
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.svg-file {
+  height: 35px;
+  padding-top: 10px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 50px;
+  text-align: justify;
+  background-image: url(./grain.png);
+  background-color: #D2BEEC;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1200px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.info__about {
+  background-color: #F587CC;
+  background-image: url(./grain.png);
+  width: 50%;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .info__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.info__about--header {
+  font-size: 40px;
+  font-family: 'Mendung', sans-serif;
+  text-align: center;
+}
+
+.info__about--text {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.info__aficiones {
+  background-color: #F587CC;
+  background-image: url(./grain.png);
+  width: 50%;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .info__aficiones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info__aficiones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.info__aficiones--header {
+  font-size: 40px;
+  font-family: 'Mendung', sans-serif;
+  text-align: center;
+}
+
+.info__aficiones--text {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.info__educacion {
+  background-color: #F587CC;
+  background-image: url(./grain.png);
+  width: 50%;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .info__educacion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info__educacion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.info__educacion--header {
+  font-size: 40px;
+  font-family: 'Mendung', sans-serif;
+  text-align: center;
+}
+
+.info__educacion--text {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.info__laboral {
+  background-color: #F587CC;
+  background-image: url(./grain.png);
+  width: 50%;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .info__laboral {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info__laboral {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.info__laboral--header {
+  font-size: 40px;
+  font-family: 'Mendung', sans-serif;
+  text-align: center;
+}
+
+.info__laboral--text {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.bandsTitle {
+  font-family: 'Seaside Resort NF', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  background-image: url(./grain.png);
+  background-color: #D2BEEC;
+  justify-items: center;
+  padding: 30px 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1200px) {
+  .image-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .image-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image-grid__bands--header {
+  font-size: 30px;
+  font-family: 'Mendung', sans-serif;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.image-grid__bands--header:hover {
+  background: #F587CC;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.pic {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 11px 8px -10px rgba(0, 0, 0, 0.75);
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 70px;
+  border-radius: 25px;
+}
+
+.formulario #name, .formulario #email, .formulario #message, .formulario #send {
+  height: 50px;
+  font-size: 25px;
+  font-family: monospace;
+  border-radius: 25px;
+}
+
+.formulario #message {
+  height: 250px;
+}
+
+/* .header__container {
+    background-color: #7ac0c0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    font-family: 'Seaside Resort NF', sans-serif;
+    box-shadow: 0px 11px 8px -10px rgba(0,0,0,0.75);
+}
+ */
+/* nav {
+    width: 100%;
+    background-image: url(./grain.png);
+} */
+/* .header__nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+} */
+/* .nav__item {
+    padding: 10px 10px;
+}
+
+.imagen {
+    background-repeat: repeat;
+} */
+/*MAIN CONTENT*/
+/*# sourceMappingURL=portfolio.css.map */
