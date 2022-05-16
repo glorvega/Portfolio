@@ -2,7 +2,7 @@
 @import "./reset";
 @import "./responsive";
 @import "./colors";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 
 html, body {
@@ -72,12 +72,13 @@ html, body {
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 50px 50px;
+        row-gap: 15px;
         text-align: justify;
         background-image: url(./grain.png);
         background-color: $purple;
         border-radius: 25px;
         box-shadow: 0px 11px 8px -10px rgba(0,0,0,0.75);
-        
+
         @media(max-width: $large){
             flex-direction: column;
             width: 100%;
@@ -296,7 +297,109 @@ html, body {
         }
     }
 
+    .social {
+        
+        &__header {
+            font-size: 30px;
+            font-family: 'Mendung', sans-serif;
+            text-align: center;
+        }
+
+        hr {
+    border: none;
+    background-color: rgba(56,58,60,0.9);
+    height: 2px;
+    width: 40px;
+    margin: 0 auto 10px auto;
+        }
+
+        &__box {
+            &--icons {
+                .svg-inline--fa {
+                    vertical-align: -0.200em;
+                  }
+                  
+                  .rounded-social-buttons {
+                    text-align: center;
+                  }
+                  
+                  .rounded-social-buttons .social-button {
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    width: 3.125rem;
+                    height: 3.125rem;
+                    border: 0.125rem solid transparent;
+                    padding: 0;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #fefefe;
+                    font-size: 1.5625rem;
+                    font-weight: normal;
+                    line-height: 2em;
+                    border-radius: 1.6875rem;
+                    transition: all 0.5s ease;
+                    margin-right: 0.25rem;
+                    margin-bottom: 0.25rem;
+                  }
+                  
+                  .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+                    -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                  }
+                  
+                  .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+                    font-size: 25px;
+                  }
+                  
+                  .rounded-social-buttons .social-button.facebook {
+                    background: #3b5998;
+                  }
+                  
+                  .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+                    color: #3b5998;
+                    background: #fefefe;
+                    border-color: #3b5998;
+                  }
+                  
+                  .rounded-social-buttons .social-button.twitter {
+                    background: #55acee;
+                  }
+                  
+                  .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+                    color: #55acee;
+                    background: #fefefe;
+                    border-color: #55acee;
+                  }
+                  
+                  .rounded-social-buttons .social-button.linkedin {
+                    background: #007bb5;
+                  }
+                  
+                  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+                    color: #007bb5;
+                    background: #fefefe;
+                    border-color: #007bb5;
+                  }
+                
+                  
+                  .rounded-social-buttons .social-button.instagram {
+                    background: #125688;
+                  }
+                  
+                  .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+                    color: #125688;
+                    background: #fefefe;
+                    border-color: #125688;
+                  }
+            }
+        }
+    }
+
+
     
+
     
 /* .header__container {
     background-color: #7ac0c0;
